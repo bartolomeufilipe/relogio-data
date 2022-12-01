@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, black, rgb(48, 48, 48), black)
+}
+
+.box {
+    width: 650px;
+    height: 430px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    border: 3px solid #000;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+}
+
+/* HORA */
+.relogio {
+    padding: 10px;
+}
+
+#hora {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 110px;
+    font-weight: 500;
+    border: 3px solid #000;
+    border-radius: 6rem;
+    padding: 20px;
+    letter-spacing: 4px;
+    box-shadow: 1px 2px 5px 2px black;
+}
+
+/* DATA */
+.calendario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 45px;
+    gap: 8px;
+}
+
+#data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 800px) {
+    #hora {
+        font-size: 100px;
+    }
+    
+    .calendario {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .box {
+        width: 600px;
+        height: 380px;
+    }
+
+    #hora {
+        font-size: 90px;
+    }
+
+    .calendario {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .calendario {
+        font-size: 30px;
+    }
+}
